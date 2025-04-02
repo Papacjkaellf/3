@@ -1,0 +1,8 @@
+name,email,phone,company,position,country,city
+Иван Иванов,ivan@example.com,+7 999 123-45-67,ООО "Пример",Менеджер,Россия,Москва
+Мария Петрова,maria@example.com,+7 999 765-43-21,ООО "Пример",Дизайнер,Россия,Санкт-Петербург
+John Smith,john@example.com,+1 555 123-4567,Example Inc,Developer,USA,New York
+Анна Сидорова,anna@example.com,+7 999 111-22-33,ООО "Тестовая",Директор,Россия,Казань
+Ivan Ivanov,ivan@example.com,+7 999 123-45-67,Example LLC,Manager,Russia,Moscow
+Peter Johnson,peter@example.com,+1 555 987-6543,Test Corp,CEO,USA,Boston
+Екатерина Смирнова,kate@example.com,+7 999 333-44-55,ООО "Вектор",Бухгалтер,Россия,Новосибирск

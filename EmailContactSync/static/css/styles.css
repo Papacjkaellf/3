@@ -1,0 +1,332 @@
+/* Custom styles that augment Bootstrap */
+
+.sidebar {
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.sidebar-collapsed {
+  max-width: 0;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+  width: 0;
+}
+
+/* When sidebar is collapsed, make the table container take full width */
+.sidebar-collapsed + #tableContainer {
+  width: 100%;
+  max-width: 100%;
+}
+
+.clickable {
+  cursor: pointer;
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+
+.merged-data {
+  color: var(--bs-danger);
+}
+
+.btn-scroll {
+  position: fixed;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.btn-scroll-top {
+  bottom: 80px;
+}
+
+.btn-scroll-bottom {
+  bottom: 20px;
+}
+
+.file-upload-container {
+  border: 2px dashed var(--bs-gray-600);
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  transition: border-color 0.3s;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.file-upload-container:hover, .file-upload-container.dragover {
+  border-color: var(--bs-primary);
+}
+
+.table-responsive {
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border: none;
+}
+
+/* Resizable columns with sticky header */
+.table th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 50px;
+  background-color: var(--bs-body-bg);
+}
+
+/* Allow text to be truncated in table cells */
+.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 0;
+}
+
+.table th .resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  cursor: col-resize;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table th .resizer:hover,
+.table th .resizing {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.table th.row-number {
+  width: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  text-align: center;
+  background-color: var(--bs-dark);
+}
+
+.table td.row-number {
+  width: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  text-align: center;
+  background-color: var(--bs-dark);
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+.stat-card {
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Table visibility checkbox styling */
+.column-checkbox {
+  margin-right: 8px;
+}
+
+/* Floating toggle button for small screens */
+@media (max-width: 767.98px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    z-index: 1050;
+    background-color: var(--bs-dark);
+    padding: 15px;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  
+  .sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    display: none;
+  }
+  
+  .sidebar-backdrop.show {
+    display: block;
+  }
+}
+
+/* MySQL status indicators */
+.mysql-table-status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.mysql-status-active {
+  background-color: var(--bs-success);
+}
+
+.mysql-status-inactive {
+  background-color: var(--bs-secondary);
+}
+
+/* Stats summary styling */
+.stats-summary {
+  background-color: rgba(33, 37, 41, 0.7);
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.stats-summary .stat-item {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+.stats-summary .stat-item i {
+  margin-right: 5px;
+}
+
+/* Database Manager Panel */
+.database-manager-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  background-color: var(--bs-dark);
+  z-index: 1100;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.database-manager-panel.show {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.database-item {
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s;
+}
+
+.database-item:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.active-database {
+  border-left: 4px solid var(--bs-success) !important;
+}
+
+.database-path {
+  font-family: monospace;
+  font-size: 0.85em;
+  color: var(--bs-info);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 600px;
+  cursor: pointer;
+}
+
+.database-path:hover {
+  text-decoration: underline;
+}
+
+#current-db-path, #db-folder-path {
+  font-family: monospace;
+  color: var(--bs-info);
+  word-break: break-all;
+  cursor: pointer;
+}
+
+#current-db-path:hover, #db-folder-path:hover {
+  text-decoration: underline;
+}
+
+/* Column filters */
+.column-filter {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  font-size: 0.85rem;
+}
+
+/* Theme styles */
+.theme-light {
+  --bs-body-bg: #f8f9fa;
+  --bs-body-color: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-dark: #212529;
+  --bs-light: #f8f9fa;
+}
+
+.theme-dark {
+  --bs-body-bg: #212529;
+  --bs-body-color: #f8f9fa;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-dark: #343a40;
+  --bs-light: #f8f9fa;
+}
+
+/* Make sure footer adapts to theme */
+footer {
+  background-color: var(--bs-dark) !important;
+  color: var(--bs-light) !important;
+}

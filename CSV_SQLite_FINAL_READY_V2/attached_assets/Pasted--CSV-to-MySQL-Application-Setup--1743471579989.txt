@@ -1,0 +1,72 @@
+======================================
+CSV to MySQL Application Setup
+======================================
+
+Node.js version detected: v22.14.0
+
+Installing dependencies...
+This may take a few minutes...
+npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+
+added 477 packages, and audited 478 packages in 29s
+
+60 packages are looking for funding
+  run `npm fund` for details
+
+8 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+Dependencies successfully installed.
+
+Port 5000 is busy, will use port 5001 instead.
+
+Configuring server for port 5001...
+
+Starting server...
+Waiting for server to start...
+
+> rest-express@1.0.0 dev
+> tsx server/index.ts
+
+Opening browser...
+
+======================================
+Server running at http://localhost:5001
+======================================
+
+Press Ctrl+C in this window to stop the server when finished.
+
+Press any key to continue . . . 3:39:23 AM [express] serving on port 5001
+Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+03:39:29 [vite] warning: Duplicate key "error" in object literal
+134|                resolve(results);
+135|              },
+136|              error: (error: Error) => {
+   |              ^
+137|                reject(error);
+138|              }
+
+  Plugin: vite:esbuild
+  File: C:/Users/Alexandr Tkalyov/Downloads/Telegram Desktop/night_club_prod/night_club_prod/Parsed/web/CsvMySqlImporter/client/src/hooks/useFileUpload.ts
+03:39:29 [vite] warning: Duplicate key "error" in object literal
+139|            });
+140|          },
+141|          error: (error: Error) => {
+   |          ^
+142|            reject(error);
+143|          }
+
+  Plugin: vite:esbuild
+  File: C:/Users/Alexandr Tkalyov/Downloads/Telegram Desktop/night_club_prod/night_club_prod/Parsed/web/CsvMySqlImporter/client/src/hooks/useFileUpload.ts
+
+^CServer stopped.
+Restoring default port in configuration...

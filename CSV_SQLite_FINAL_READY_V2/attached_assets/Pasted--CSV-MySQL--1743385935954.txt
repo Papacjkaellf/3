@@ -1,0 +1,71 @@
+======================================
+╨г╤Б╤В╨░╨╜╨╛╨▓╨║╨░ ╨╕ ╨╖╨░╨┐╤Г╤Б╨║ CSV ╨▓ MySQL
+======================================
+
+╨Ю╨▒╨╜╨░╤А╤Г╨╢╨╡╨╜ Node.js ╨▓╨╡╤А╤Б╨╕╨╕: v22.14.0
+
+╨г╤Б╤В╨░╨╜╨╛╨▓╨║╨░ ╨╖╨░╨▓╨╕╤Б╨╕╨╝╨╛╤Б╤В╨╡╨╣...
+╨н╤В╨╛ ╨╝╨╛╨╢╨╡╤В ╨╖╨░╨╜╤П╤В╤М ╨╜╨╡╤Б╨║╨╛╨╗╤М╨║╨╛ ╨╝╨╕╨╜╤Г╤В...
+npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+
+added 477 packages, and audited 478 packages in 51s
+
+60 packages are looking for funding
+  run `npm fund` for details
+
+8 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm notice
+npm notice New major version of npm available! 10.9.2 -> 11.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.2.0
+npm notice To update run: npm install -g npm@11.2.0
+npm notice
+╨Ч╨░╨▓╨╕╤Б╨╕╨╝╨╛╤Б╤В╨╕ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╗╨╡╨╜╤Л.
+
+╨Т╨Э╨Ш╨Ь╨Р╨Э╨Ш╨Х: ╨Я╨╛╤А╤В 5000 ╤Г╨╢╨╡ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В╤Б╤П.
+╨Т╨╛╨╖╨╝╨╛╨╢╨╜╨╛, ╤Б╨╡╤А╨▓╨╡╤А ╤Г╨╢╨╡ ╨╖╨░╨┐╤Г╤Й╨╡╨╜ ╨╕╨╗╨╕ ╨┤╤А╤Г╨│╨╛╨╡ ╨┐╤А╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В ╤Н╤В╨╛╤В ╨┐╨╛╤А╤В.
+
+╨Я╨╛╨┐╤А╨╛╨▒╨╛╨▓╨░╤В╤М ╨╖╨░╨┐╤Г╤Б╤В╨╕╤В╤М ╤Б╨╡╤А╨▓╨╡╤А ╨▓ ╨╗╤О╨▒╨╛╨╝ ╤Б╨╗╤Г╤З╨░╨╡? [Y,N]?Y
+
+╨Ч╨░╨┐╤Г╤Б╨║ ╤Б╨╡╤А╨▓╨╡╤А╨░...
+╨Ю╨╢╨╕╨┤╨░╨╜╨╕╨╡ ╨╖╨░╨┐╤Г╤Б╨║╨░ ╤Б╨╡╤А╨▓╨╡╤А╨░...
+
+> rest-express@1.0.0 dev
+> tsx server/index.ts
+
+╨Ю╤В╨║╤А╤Л╤В╨╕╨╡ ╨▒╤А╨░╤Г╨╖╨╡╤А╨░...
+
+======================================
+╨б╨╡╤А╨▓╨╡╤А ╨╖╨░╨┐╤Г╤Й╨╡╨╜ ╨╜╨░ http://localhost:5000
+======================================
+
+╨Э╨░╨╢╨╝╨╕╤В╨╡ Ctrl+C ╨▓ ╤Н╤В╨╛╨╝ ╨╛╨║╨╜╨╡, ╤З╤В╨╛╨▒╤Л ╨╛╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╤М ╤Б╨╡╤А╨▓╨╡╤А, ╨║╨╛╨│╨┤╨░ ╨╖╨░╨║╨╛╨╜╤З╨╕╤В╨╡ ╤А╨░╨▒╨╛╤В╤Г.
+
+Для продолжения нажмите любую клавишу . . . node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen ENOTSUP: operation not supported on socket 0.0.0.0:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'ENOTSUP',
+  errno: -4049,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 5000
+}
+
+Node.js v22.14.0

@@ -1,0 +1,10 @@
+email-validator
+flask
+flask-sqlalchemy
+gunicorn
+openpyxl
+pandas
+psycopg2-binary
+pymysql
+sqlalchemy
+werkzeug
